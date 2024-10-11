@@ -14,18 +14,19 @@ crossIcon.addEventListener('click', function () {
 
 showMoreMenu.addEventListener('mouseenter', function (e) {
   const ul = e.target.childNodes[5];
-  ul.style.animation = 'showUp 0.35s 1';
+  ul.style.animation = 'showUp 0.9s 1';
   ul.style.display = 'block';
 });
 
 showMoreMenu.addEventListener('mouseleave', function (e) {
   const ul = e.target.childNodes[5];
+  ul.style.animation = 'showUp 0.9s 1';
   ul.style.display = 'none';
 });
 
 showProductMenu.addEventListener('mouseenter', function (e) {
   const div = e.target.childNodes[5];
-  div.style.animation = 'showUp 0.35s 1';
+  div.style.animation = 'showUp 0.9s 1';
   div.style.display = 'flex';
 });
 
