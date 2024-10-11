@@ -471,6 +471,43 @@ header {
   border-radius: 10px;
 }
 
+.support {
+  width: 1110px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  background-color: #fbf6f1;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support-number {
+  font-family: YekanBakhHeavy;
+  font-size: 1.5rem;
+}
+
+#line {
+  margin: 0 15px;
+}
+
+.phone-number {
+  color: #21457f;
+}
+
+.support-request {
+  display: flex;
+  color: #21457f;
+  font-family: YekanBakhBold;
+  font-size: 1.5rem;
+}
+
+.support-request img {
+  width: 20px;
+  margin-right: 10px;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -538,6 +575,9 @@ header {
   .start-box {
     width: 966px;
   }
+  .support {
+    width: 880px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -599,6 +639,15 @@ header {
     margin: 0 38px;
     width: calc(100% - 76px);
   }
+
+  .support {
+    width: calc(100% - 120px);
+  }
+
+  .support-request,
+  .support-number {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -644,6 +693,17 @@ header {
     margin: 0 8px;
     width: calc(100% - 16px);
   }
+  .support {
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+  .support-request {
+    background-color: #fbf6f1;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -685,5 +745,15 @@ header {
 
   .start-box p {
     font-size: 1rem;
+  }
+
+  .support {
+    width: calc(100% - 60px);
+    padding: 0;
+    margin: 50px 30px;
+  }
+
+  .support-number, .support-request {
+    font-size: 0.95rem;
   }
 }
